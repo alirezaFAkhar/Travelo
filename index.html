@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media-queries.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function showMenu() {
+        var menu = document.getElementById("menu");
+        if (menu.className === "header-menu") {
+          menu.className += " show";
+        } else {
+          menu.className = "header-menu";
+        }
+      }
+    </script>
+    <header class="d-flex">
+      <div>
+        <a href="#">
+          <img src="images/logo.png" alt="" />
+        </a>
+      </div>
+
+      <nav>
+        <ul class="header-menu" id="menu">
+          <li class="header-menu-item">Home</li>
+          <li class="header-menu-item">About</li>
+          <li class="header-menu-item">Destination</li>
+          <li class="header-menu-item">Pages</li>
+          <li class="header-menu-item">Blog</li>
+          <li class="header-menu-item">Contact</li>
+        </ul>
+      </nav>
+
+      <div>
+        <div class="search-icon d-flex">
+          <a href="">
+            <i class="fa fa-search"></i>
+          </a>
+        </div>
+        <div class="derop-icon-menu d-flex">
+          <button class="header-menu-burger" onclick="showMenu()">
+            <i class="bars fa fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="slider">
+        <div class="slider-text d-flex">
+          <h3>Lorem, ipsum dolor.</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <a href="#" class="slider-btn">Explore now</a>
+        </div>
+      </section>
+      <section class="search-bar d-flex">
+        <h3>Where you want to go?</h3>
+        <form action="" class="search-form d-flex">
+          <input type="text" placeholder="where to go?" />
+          <input type="text" placeholder="where to go?" />
+          <input type="text" placeholder="where to go?" />
+          <button class="search-btn" type="submit">search</button>
+        </form>
+      </section>
+      <section class="papular">
+        <section class="row popular-heading">
+          <h3 class="popular-title">popular Destination</h3>
+          <p class="popular-description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam,
+            hic!
+          </p>
+        </section>
+        <section class="row papular-container">
+          <article>
+            <img src="images/1.png" alt="" />
+            <div class="popular-image-info">
+              <p>Italy <a href="#">07 places</a></p>
+            </div>
+          </article>
+          <article>
+            <img src="images/2.png" alt="" />
+            <div class="popular-image-info">
+              <p>Brazil <a href="#">03 places</a></p>
+            </div>
+          </article>
+          <article>
+            <img src="images/3.png" alt="" />
+            <div class="popular-image-info">
+              <p>America <a href="#">10 places</a></p>
+            </div>
+          </article>
+          <article>
+            <img src="images/4.png" alt="" />
+            <div class="popular-image-info">
+              <p>Nepal <a href="#">02 places</a></p>
+            </div>
+          </article>
+          <article>
+            <img src="images/5.png" alt="" />
+            <div class="popular-image-info">
+              <p>Maldives <a href="#">02 places</a></p>
+            </div>
+          </article>
+          <article>
+            <img src="images/6.png" alt="" />
+            <div class="popular-image-info">
+              <p>Maldives <a href="#">02 places</a></p>
+            </div>
+          </article>
+        </section>
+      </section>
+      <section class="newsletter d-flex">
+        <div class="newsletter-container row">
+          <div class="newsletter-text d-flex">
+            <h4>subscribe our Newsletter</h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Corporis, eos.
+            </p>
+          </div>
+          <div class="mail-form">
+            <input type="email" placeholder="Your Email" />
+            <button class="newsletter-btn" type="submit">Subscribe</button>
+          </div>
+        </div>
+      </section>
+      <section class="video">
+        <div class="video-container d-flex">
+          <h3>Enjoy Video</h3>
+          <div class="video-buttom d-flex">
+            <a href="#">
+              <i class="fa fa-play"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="row">
+      <div class="left-footer">
+        <img src="images/footer_logo.png" alt="" class="footer-img" />
+        <ul class="footer-info">
+          <li>Lorem ipsum dolor sit amet consectetur.</li>
+          <li>Lorem, ipsum dolor.</li>
+          <li>152 485 477 852</li>
+          <li>Lorem, ipsum dolor.</li>
+        </ul>
+      </div>
+      <div class="right-footer">
+        <h3 class="footer-titile">Lorem, ipsum.</h3>
+        <ul class="links">
+          <li>
+            <a href="">mash</a>
+          </li>
+          <li>
+            <a href="">iran</a>
+          </li>
+          <li>
+            <a href="">tehran</a>
+          </li>
+          <li>
+            <a href="">usa</a>
+          </li>
+          <li>
+            <a href="">londen</a>
+          </li>
+          <li>
+            <a href="">canada</a>
+          </li>
+          <li>
+            <a href="">berzil</a>
+          </li>
+          <li>
+            <a href="">un</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
